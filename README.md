@@ -9,9 +9,9 @@
 7. Click `Add Archetype...`
 8. Enter the archetype package details:
 
-    - GroupId: com.boulder
-    - ArtifactId: maven-archetype-war
-    - Version: 1.0-SNAPSHOT
+    - GroupId: `com.boulder`
+    - ArtifactId: `maven-archetype-war`
+    - Version: `1.0-SNAPSHOT`
     - Repository: (leave blank)
     
 9. Click `OK` and you should see the archetype appear in the list of options
