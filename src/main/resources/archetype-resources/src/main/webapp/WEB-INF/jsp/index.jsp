@@ -5,7 +5,6 @@
 
 <head>
     <title>Maven WebApp Archetype</title>
-    <description>Boilerplate for a Maven Web Application</description>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>

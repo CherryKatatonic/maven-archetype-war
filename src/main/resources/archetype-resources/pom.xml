@@ -36,6 +36,8 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+    <!--  Included to prevent false flag compilation errors in Eclipse -->
+    <!--  See https://stackoverflow.com/questions/36917254/what-is-the-purpose-of-javax-servlet-jsp-api for details -->
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>javax.servlet.jsp-api</artifactId>
@@ -43,11 +45,12 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
+    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
     <dependency>
-      <groupId>javax.servlet.jsp.jstl</groupId>
-      <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-      <version>1.2.2</version>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
@@ -79,12 +82,10 @@
           <version>2.22.1</version>
         </plugin>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.3</version>
         </plugin>
-
 
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

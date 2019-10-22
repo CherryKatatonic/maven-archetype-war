@@ -14,14 +14,13 @@ public class Home extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        super.init(getServletConfig());
         greeting = getServletConfig().getInitParameter("greeting");
     }
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         req.setAttribute("greeting", greeting);
-        req.getRequestDispatcher("/index.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/index.jsp").forward(req, resp);
     }
 
 }
