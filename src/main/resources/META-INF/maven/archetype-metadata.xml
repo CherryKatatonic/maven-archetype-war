@@ -28,6 +28,7 @@ under the License.
       <directory></directory>
       <includes>
           <include>.gitignore</include>
+          <include>*.md</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" packaged="true">
